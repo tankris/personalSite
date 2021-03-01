@@ -18,6 +18,114 @@
       href="resources/favicon-32x32.png"
       type="image/x-icon"
     />
+    <!-- Link to Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
   </head>
-  <body></body>
+  <body>
+    <h1>Namaste! I am Tanishq</h1>
+    <div id="intro-box">
+      <nav id="nav-bar">
+        <div id="nav-buttons">
+          <div class="circle red"></div>
+          <div class="circle yellow"></div>
+          <div class="circle green"></div>
+        </div>
+        <a href="#">Contact</a>
+      </nav>
+      <div id="intro-content">
+        <img id="display-picture" src="#" alt="Photo of Tanishq Krishnan" />
+        <div id="about">
+          <h2>Welcome to my site!</h2>
+          <p>
+            This is the home of a 24 year old that LOVES to Talk, play Go, count
+            Calories, fiddle with Linux and Code his Dreams!
+          </p>
+          <p>Did I already mention Talk? Yea.. and Talk!</p>
+        </div>
+      </div>
+    </div>
+    <div id="more-box">
+      <div id="left-box">
+        <div id="more-about">
+          <h2>More about me</h2>
+          <p>
+            Currently focussing my time on studying web development. <br />
+            In my spare time you can either find me playing Go or watching a
+            Comedy TV Show (Currently: Parks & Rec)<br />
+          </p>
+        </div>
+        <div id="social-links">
+          <h3>Social Links</h3>
+          <div id="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"
+              ><img src="resources/ogslogo.svg" width="16px" height="16px"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div id="right-box">
+        <h3>Top Expertise</h3>
+        <div id="first-skill"><p>HTML & CSS</p></div>
+        <div id="first-skill-bar"></div>
+        <div id="second-skill"><p>JavaScript</p></div>
+        <div id="second-skill-bar"></div>
+        <div id="third-skill"><p>Java & Git</p></div>
+        <div id="third-skill-bar"></div>
+        <p>Here you can find my updated <a href="#">Resume</a></p>
+      </div>
+    </div>
+    <div id="contact-box">
+      <h2>Contact Me</h2>
+      <p>Wanna meet up for a cup of Coffee? (I don't drink though :P)</p>
+      <p>Maybe even Looking to Hire me! (Yes, please!)</p>
+      <p>or even Fire me! (Nooooo)</p>
+      <p>Send me an email and we'll surely work things out (Yay!)</p>
+      <br />
+      <p>You can either directly send me an email</p>
+      <p>or use the convenient Little Form below</p>
+      <form id="contact-form" autocomplete="on">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          type="text"
+          placeholder="John Wick"
+          required
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="john_wick@continental.com"
+          required
+        />
+        <label for="subject">Subject:</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Regarding my Doggo"
+          required
+        />
+        <label for="message">Message:</label>
+        <textarea
+          rows="5"
+          cols="75"
+          id="message"
+          placeholder="Tell your son to return my Doggo right now"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>
