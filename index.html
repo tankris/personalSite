@@ -18,6 +18,9 @@
       href="resources/favicon-32x32.png"
       type="image/x-icon"
     />
+    <!-- Link to Normalize.css, a CSS Reset stylesheet -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+
     <!-- Link to Font Awesome CDN -->
     <link
       rel="stylesheet"
@@ -25,27 +28,43 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <h1>Namaste! I am Tanishq</h1>
-    <div id="intro-box">
-      <nav id="nav-bar">
-        <div id="nav-buttons">
-          <div class="circle red"></div>
-          <div class="circle yellow"></div>
-          <div class="circle green"></div>
-        </div>
-        <a href="#">Contact</a>
-      </nav>
-      <div id="intro-content">
-        <img id="display-picture" src="#" alt="Photo of Tanishq Krishnan" />
-        <div id="about">
-          <h2>Welcome to my site!</h2>
-          <p>
-            This is the home of a 24 year old that LOVES to Talk, play Go, count
-            Calories, fiddle with Linux and Code his Dreams!
-          </p>
-          <p>Did I already mention Talk? Yea.. and Talk!</p>
+    <!-- The first box -->
+    <div id="greetings-box">
+      <h1>Namaste! I am Tanishq</h1>
+      <div id="intro-box">
+        <!-- Navigation bar -->
+        <nav id="nav-bar">
+          <!-- Apple styled nav buttons -->
+          <div id="nav-buttons">
+            <div class="circle red"></div>
+            <div class="circle yellow"></div>
+            <div class="circle green"></div>
+          </div>
+          <!-- Link to the Contact me section -->
+          <a href="#contact-box">Contact</a>
+        </nav>
+        <div id="intro-content">
+          <img
+            id="display-picture"
+            src="resources/displayPicture.jpg"
+            alt="Photo of Tanishq Krishnan"
+          />
+          <!-- Intro paragh about the author -->
+          <div id="about-frame">
+            <div id="about">
+              <h2>Welcome to my site!</h2>
+              <p>
+                This is the home of a 24 year old that LOVES to Talk, play Go,
+                count Calories, fiddle with Linux and Code his Dreams!
+              </p>
+              <!-- <p>Did I already mention Talk? Yea.. and Talk!</p> -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
