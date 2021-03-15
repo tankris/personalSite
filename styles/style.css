@@ -1,6 +1,10 @@
 :root {
   /* Set root font size to 10px */
   font-size: 62.5%;
+  /* Color variabls */
+  --border-color: #c1c1c1;
+  --gray-back: #eaeaea;
+  --skill-bar: #f0ead6;
 }
 
 html {
@@ -10,11 +14,12 @@ html {
 
 body {
   font-size: 1.6rem;
+  line-height: 1.6;
   text-align: center;
 }
 
 #greetings-box {
-  background-color: #eaeaea;
+  background-color: var(--gray-back);
   /* The div was being pushed down and showing a bit of the body,
    so set overflow to hidden */
   overflow: hidden;
@@ -22,12 +27,16 @@ body {
 
 h1 {
   margin: 4.5rem;
-  font-size: 5rem;
+  font-size: 4.174rem;
+}
+
+h2 {
+  font-size: 2.588rem;
 }
 
 #intro-box {
   margin: 0 auto;
-  border: 1px solid #c1c1c1;
+  border: 1px solid var(--border-color);
   height: 50rem;
   width: 95rem;
   display: flex;
@@ -47,7 +56,7 @@ h1 {
 
 #nav-bar {
   /* intro-box already has a border, so setting border for the entire nav-bar would overlap the already existing border, so set only the bottom border */
-  border-bottom: 1px solid #c1c1c1;
+  border-bottom: 1px solid var(--border-color);
   min-height: 4.5rem;
   padding: 0 1.5rem;
   display: flex;
@@ -91,7 +100,7 @@ h1 {
   align-items: center;
 }
 
-/* The properties to add when restore/maximize button is clicked */
+/* The properties to add when resize button is clicked */
 .restore-content {
   min-height: 55rem;
   flex-direction: column;
@@ -109,16 +118,78 @@ h1 {
 }
 
 #about-frame {
+  position: relative;
+  top: 2rem;
+  /* right: 2rem; */
   background-color: #f0ead6;
 }
 
 #about {
   position: relative;
-  top: 2rem;
-  left: 2rem;
+  bottom: 2rem;
+  right: 2rem;
   border: 1px solid #17a2b8;
   width: 30rem;
   padding: 1rem 1.5rem;
   background-color: #f8f6ed;
   text-align: justify;
+}
+
+/* Second section of the site */
+
+#more-box-wrapper {
+  border: 1px solid var(--border-color);
+}
+
+#more-box {
+  margin: 0 auto;
+  width: 110rem;
+  padding: 8rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+#left-box {
+  width: 52.5rem;
+}
+
+#social-links {
+  border-top: 2px solid var(--border-color);
+  text-align: center;
+}
+
+#social-icons {
+  font-size: 4.174rem;
+}
+
+#social-icons > a {
+  margin-right: 0.5rem;
+}
+
+#social-icons > a > img {
+  position: relative;
+  top: 0.4rem;
+}
+
+#right-box {
+  width: 52.5rem;
+}
+
+#first-skill-bar {
+  border-radius: 1rem;
+  height: 2rem;
+  background-color: var(--skill-bar);
+}
+
+#second-skill-bar {
+  border-radius: 1rem;
+  height: 2rem;
+  background-color: var(--skill-bar);
+}
+
+#third-skill-bar {
+  border-radius: 1rem;
+  height: 2rem;
+  background-color: var(--skill-bar);
 }
